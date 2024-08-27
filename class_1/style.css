@@ -1,0 +1,9 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.test{
+    color: rgb(232, 5, 244);
+    font-size: 16p;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Pacifico&display=swap');
+
+/* font cdn */
+
+
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: "Fira Code", monospace;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    min-height: 100vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(228, 228, 228, 0.962);
+}
+
+.nav_container{
+    height: 100px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.logo_part{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo_part>h1{
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+}
+
+
+.menu_part{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu_part>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+
+}
+
+.button_part{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_part>button{
+    height: 50px;
+    width: 50%;
+    font-family: "Pacifico", cursive;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: transparent;
+
+}

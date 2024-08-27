@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+:root {
+    --1st_font: 'Playwrite HU', cursive;
+    --2nd_font: 'Inconsolata', monospace;
+    --green_light: #8de577;
+    --blue_light: #8de577;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--2nd_font);
+}
+
+body{
+    width: 100%;
+    min-height: 85vh;
+    background-color: var(--green_light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 50%;
+    height: auto;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
