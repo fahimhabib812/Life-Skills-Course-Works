@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Pacifico&display=swap');
+
+/* font cdn */
+
+@keyframes breath{
+    0%{
+        scale: 1 1;
+    }
+    50%{
+        scale: 1.3 1.3;
+    }
+    100%{
+        scale:1 1 ;
+    }
+}
+
+
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: "Fira Code", monospace;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    min-height: 100vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(228, 228, 228, 0.962);
+}
+
+/* nav bar design */
+
+.nav_container{
+    height: 100px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.logo_part{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo_part>h1{
+    font-size: 30px;
+    font-family: "Pacifico", cursive;}
+
+
+.menu_part{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu_part>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+
+}
+
+.button_part{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_part>button{
+    height: 50px;
+    width: 50%;
+    font-family: "Pacifico", cursive;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: transparent;
+
+}
+
+/* hero section design */
+
+.hero_container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero_text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 50px;
+}
+.hero_text >h1{
+    font-family: "Pacifico", cursive;
+    font-size: 4rem;
+}
+.hero_text>p{
+    font-size: 20px;
+    line-height: 28px;
+}
+.hero_text_btn{
+    width: 100%;
+    margin-top: 20px;
+}
+.hero_text_btn>button{
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s all;
+}
+.hero_text_btn>button:hover{
+    background-color: #fff;
+    color: black;
+    scale: 1.2 1.2;
+}
+.hero_text_btn>button:nth-child(2){
+    background: #fff;
+    color: black;
+    margin-left: 30px;
+}
+.hero_text_btn>button:nth-child(2):hover{
+    background-color: black;
+    color: #fff;
+    scale: 1.2 1.2;
+}
+
+.hero_img{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero_img>img{
+    height: 350px;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+    animation-name: breath;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* about section design */
+.aboutUscontainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.aboutUs_top,
+.aboutUs_bottom{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutUs_top_img,
+.aboutUs_bottom_img{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutUs_top_img>img,
+.aboutUs_bottom_img>img{
+    height: 300px;
+    width: 470px;
+    border-radius: 10px;
+}
+.aboutUs_top_text,
+.aboutUs_bottom_text{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.aboutUs_top_text>h1
+{
+    width: 100%;
+    font-family: "Pacifico", cursive;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+.aboutUs_top_text>p
+{
+    width: 90%;
+    font-size: 18px;
+}
+.aboutUs_bottom_text>h1{
+    width: 100%;
+    padding-left: 60px;
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.aboutUs_bottom_text>p{
+    width: 80%;
+    padding:0px 60px;
+}
